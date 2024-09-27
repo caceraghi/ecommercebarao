@@ -9,6 +9,13 @@
     //crio uma área onde o JS vai ser carregado
     <p id="exemplo01"></p>
     <p id="qtde"></p>
+    <p id="exibicao"></p>
+    <ul>
+        <li>Tiago</li>
+        <li>Tomas</li>
+        <li>Rodolfo</li>
+        <li>Guilherme</li>
+    </ul>
     <script>
         const carros = [
             "HB20",
@@ -19,6 +26,12 @@
 
         var tamanho = carros.length;
         document.getElementById("qtde").innerHTML = tamanho;
+
+        let texto = "<ul>";
+        for (let i = 0; i < tamanho; i++){
+           texto += "<li>" + carros[i] + "</li>";     
+        }
+        texto += "</ul>";    
     </script>
 </body>
 </html>
