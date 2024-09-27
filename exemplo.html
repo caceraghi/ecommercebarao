@@ -22,6 +22,8 @@
         var tamanho = carros.length;
         document.getElementById("qtde").innerHTML = tamanho;
 
+        carros[0] = "Fusca";
+
         let texto = "<ul>";
         for (let i = 0; i < tamanho; i++){
            texto += "<li>" + carros[i] + "</li>";     
