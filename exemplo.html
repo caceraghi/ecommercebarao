@@ -8,7 +8,7 @@
 <body>
     //crio uma área onde o JS vai ser carregado
     <p id="exemplo01"></p>
-
+    <p id="qtde"></p>
     <script>
         const carros = [
             "HB20",
@@ -16,6 +16,9 @@
             "Fiat 147"
         ];
         document.getElementById("exemplo01").innerHTML = carros;
+
+        var tamanho = carros.length;
+        document.getElementById("qtde").innerHTML = tamanho;
     </script>
 </body>
 </html>
