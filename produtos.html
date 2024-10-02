@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li>
+                <a href="carrinho.html">Carrinho</a>
+                <span id="qtdeCarrinho">0</span>
+            </li>
+        </ul>
+    </nav>
 
+    <!-- Barra de Pesquisa -->
+     <div class="barra-pesquisa">
+        <input type="text" id="barraPesquisa" 
+        placeholder="Pesquisar produtos" 
+        oninput="filtrarProdutos()" >
+     </div>
+
+     <!-- Galeria Produtos -->
+      <div class="container" id="produtosContainer">
+        <div class="produto" data-nome="Produto 1">
+            <img src="https://via.placeholder.com/250"
+            alt="Produto 1">
+            <h2>Produto 1</h2>
+            <p>Preço: R$50,00</p>
+            <p id="estoque-produto-1">Estoque: 5</p>
+            <button id="btn-produto-1" 
+            onclick="adicionarAoCarrinho('Produto 1',50, 1)">
+            Comprar</button>
+        </div>
+        <div class="produto" data-nome="Produto 1">
+            <img src="https://via.placeholder.com/250"
+            alt="Produto 1">
+            <h2>Produto 1</h2>
+            <p>Preço: R$50,00</p>
+            <p id="estoque-produto-1">Estoque: 5</p>
+            <button id="btn-produto-1" 
+            onclick="adicionarAoCarrinho('Produto 1',50, 1)">
+            Comprar</button>
+        </div>
+        <div class="produto" data-nome="Produto 2">
+            <img src="https://via.placeholder.com/250"
+            alt="Produto 2">
+            <h2>Produto 2</h2>
+            <p>Preço: R$520,00</p>
+            <p id="estoque-produto-3">Estoque: 3</p>
+            <button id="btn-produto-2" 
+            onclick="adicionarAoCarrinho('Produto 2',50, 2)">
+            Comprar</button>
+        </div>
+        <div class="produto" data-nome="Produto 3">
+            <img src="https://via.placeholder.com/250"
+            alt="Produto 3">
+            <h2>Produto 3</h2>
+            <p>Preço: R$20,00</p>
+            <p id="estoque-produto-3">Estoque: 10</p>
+            <button id="btn-produto-3" 
+            onclick="adicionarAoCarrinho('Produto 3',50, 3)">
+            Comprar</button>
+        </div>
+      </div>
+     
+</body>
+</html>
