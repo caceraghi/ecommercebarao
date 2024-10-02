@@ -31,3 +31,33 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+.conteudo {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.conteudo h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.conteudo p {
+    font-size: 24px;
+}
+
+.conteudo .btn {
+    background-color: white;
+    color: #4CAF50;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.conteudo .btn:hover {
+    background-color: #f1f1f1;
+}
