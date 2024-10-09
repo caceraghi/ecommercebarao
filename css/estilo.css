@@ -97,3 +97,54 @@ nav ul li a:hover {
 .produto button:hover {
     background-color: #218838;
 }
+
+/* Carrinho */
+#carrinho {
+    background-color: #ccc;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#carrinho h1 {
+    margin-bottom: 15px;
+}
+
+#carrinho ul {
+    list-style: none;
+    padding: 0;
+}
+
+#carrinho ul li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#carrinho ul li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#carrinho ul li button:hover {
+    background-color: #52141a;
+}
+
+#total {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
