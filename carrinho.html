@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li>
+                <a href="carrinho.html">Carrinho</a>
+                <span id="qtdeCarrinho">0</span>
+            </li>
+        </ul>
+    </nav>
 
+    <!-- Conteúdo do Carrinho -->
+     <div id="carrinho">
+        <h1>Carrinho de Compras</h1>
+        <ul id="listaCarrinho"></ul>
+        <p id="total">Total: R$ 0.00</p>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+        <button onclick="limparCarrinho()">Limpar Carrinho</button>
+     </div>
+</body>
+</html>
