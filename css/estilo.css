@@ -148,3 +148,17 @@ button {
 button:hover {
     opacity: 0.8;
 }
+
+/* Barra de Pesquisa */
+.barra-pesquisa {
+    text-align: center;
+    margin: 20px;
+}
+
+.barra-pesquisa input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
