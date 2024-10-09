@@ -61,3 +61,39 @@ nav ul li a:hover {
 .conteudo .btn:hover {
     background-color: #f1f1f1;
 }
+
+/* Produtos */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produto h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.produto p {
+    color: #555;
+}
+
+.produto button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.produto button:hover {
+    background-color: #218838;
+}
