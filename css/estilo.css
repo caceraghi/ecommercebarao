@@ -1,10 +1,11 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
 }
 
+/* Barra de Navegação */
 nav {
     background-color: #333;
     color: white;
@@ -32,23 +33,24 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.conteudo {
+/* Tela Inicial */
+.hero {
     background-color: #4CAF50;
     color: white;
     text-align: center;
     padding: 100px 20px;
 }
 
-.conteudo h1 {
+.hero h1 {
     margin: 0;
     font-size: 48px;
 }
 
-.conteudo p {
+.hero p {
     font-size: 24px;
 }
 
-.conteudo .btn {
+.hero .btn {
     background-color: white;
     color: #4CAF50;
     padding: 10px 20px;
@@ -58,16 +60,26 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
-.conteudo .btn:hover {
+.hero .btn:hover {
     background-color: #f1f1f1;
 }
 
-/* Produtos */
+/* Galeria de Produtos */
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px;
+}
+
+.produto {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .produto img {
@@ -98,20 +110,20 @@ nav ul li a:hover {
     background-color: #218838;
 }
 
-/* Carrinho */
+/* Carrinho de Compras */
 #carrinho {
-    background-color: #ccc;
+    background-color: white;
     padding: 20px;
     margin: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#carrinho h1 {
+#carrinho h2 {
     margin-bottom: 15px;
 }
 
 #carrinho ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
@@ -132,7 +144,7 @@ nav ul li a:hover {
 }
 
 #carrinho ul li button:hover {
-    background-color: #52141a;
+    background-color: #c82333;
 }
 
 #total {
@@ -146,16 +158,16 @@ button {
 }
 
 button:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 /* Barra de Pesquisa */
-.barra-pesquisa {
+.search-bar {
     text-align: center;
     margin: 20px;
 }
 
-.barra-pesquisa input {
+.search-bar input {
     padding: 10px;
     width: 300px;
     font-size: 16px;

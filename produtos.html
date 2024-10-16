@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Barra de Navegação -->
     <nav>
         <ul>
-            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="index.html">Início</a></li>
             <li><a href="produtos.html">Produtos</a></li>
             <li>
-                <a href="carrinho.html">Carrinho</a>
-                <span id="qtdeCarrinho">0</span>
+                <a href="carrinho.html">Carrinho</a> 
+                <span id="quantidadeCarrinho">0</span>
             </li>
         </ul>
     </nav>
+    
 
     <!-- Barra de Pesquisa -->
-    <div class="barra-pesquisa">
-        <input type="text" id="input" placeholder="Pesquisar produtos..." oninput="filtrarProdutos()">
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Pesquisar produtos..." oninput="filtrarProdutos()">
     </div>
 
     <!-- Galeria de Produtos -->
@@ -48,7 +50,7 @@
             <button id="btn-produto-3" onclick="adicionarAoCarrinho('Produto 3', 150, 3)">Adicionar ao Carrinho</button>
         </div>
     </div>
-      
-      <script src="js/script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
