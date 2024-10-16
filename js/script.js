@@ -15,25 +15,28 @@ function salvarCarrinho() {
     atualizarQuantidadeCarrinho();
 }
 
+// Função para adicionar um item ao carrinho
 function adicionarAoCarrinho(nomeProduto, preco, produtoId) {
-    const produtoExistente = carrinho.find(item = item.nome === nomeProduto);
+    const produtoExistente = carrinho.find(item => item.nome === nomeProduto);
     const estoqueAtual = estoqueProdutos[produtoId];
 
-    if (estoqueAtual > 0){
+    if (estoqueAtual > 0) {
         if (produtoExistente) {
             produtoExistente.quantidade++;
-        }else {
-            carrinho.push({nome: nomeProduto, preco: preco, quantidade: 1});
+        } else {
+            carrinho.push({ nome: nomeProduto, preco: preco, quantidade: 1 });
         }
+
         estoqueProdutos[produtoId]--;
         atualizarEstoque(produtoId);
         total += preco;
         salvarCarrinho();
-        alert('Produto adicionado ao Carrinho!');
-    }else {
+        alert('Produto adicionado ao carrinho!');
+    } else {
         alert('Produto esgotado!');
     }
 }
+
 
 function atualizarEstoque(produtoId) {
     const estoqueElemento = document.getElementById('estoque-produto-${produtoId}');
