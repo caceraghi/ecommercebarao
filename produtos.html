@@ -20,55 +20,34 @@
     </nav>
 
     <!-- Barra de Pesquisa -->
-     <div class="barra-pesquisa">
-        <input type="text" id="barraPesquisa" 
-        placeholder="Pesquisar produtos" 
-        oninput="filtrarProdutos()" >
-     </div>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Pesquisar produtos..." oninput="filtrarProdutos()">
+    </div>
 
-     <!-- Galeria Produtos -->
-      <div class="container" id="produtosContainer">
+    <!-- Galeria de Produtos -->
+    <div class="container" id="produtosContainer">
         <div class="produto" data-nome="Produto 1">
-            <img src="https://via.placeholder.com/250"
-            alt="Produto 1">
+            <img src="https://via.placeholder.com/250" alt="Produto 1">
             <h2>Produto 1</h2>
-            <p>Preço: R$50,00</p>
+            <p>Preço: R$ 50,00</p>
             <p id="estoque-produto-1">Estoque: 5</p>
-            <button id="btn-produto-1" 
-            onclick="adicionarAoCarrinho('Produto 1',50, 1)">
-            Comprar</button>
+            <button id="btn-produto-1" onclick="adicionarAoCarrinho('Produto 1', 50, 1)">Adicionar ao Carrinho</button>
         </div>
         <div class="produto" data-nome="Produto 2">
-            <img src="https://via.placeholder.com/250"
-            alt="Produto 2">
+            <img src="https://via.placeholder.com/250" alt="Produto 2">
             <h2>Produto 2</h2>
-            <p>Preço: R$520,00</p>
+            <p>Preço: R$ 100,00</p>
             <p id="estoque-produto-2">Estoque: 3</p>
-            <button id="btn-produto-2" 
-            onclick="adicionarAoCarrinho('Produto 2',50, 2)">
-            Comprar</button>
+            <button id="btn-produto-2" onclick="adicionarAoCarrinho('Produto 2', 100, 2)">Adicionar ao Carrinho</button>
         </div>
         <div class="produto" data-nome="Produto 3">
-            <img src="https://via.placeholder.com/250"
-            alt="Produto 3">
+            <img src="https://via.placeholder.com/250" alt="Produto 3">
             <h2>Produto 3</h2>
-            <p>Preço: R$20,00</p>
-            <p id="estoque-produto-3">Estoque: 10</p>
-            <button id="btn-produto-3" 
-            onclick="adicionarAoCarrinho('Produto 3',50, 3)">
-            Comprar</button>
+            <p>Preço: R$ 150,00</p>
+            <p id="estoque-produto-3">Estoque: 2</p>
+            <button id="btn-produto-3" onclick="adicionarAoCarrinho('Produto 3', 150, 3)">Adicionar ao Carrinho</button>
         </div>
-        <div class="produto" data-nome="Produto 4">
-            <img src="https://via.placeholder.com/250"
-            alt="Produto 4">
-            <h2>Produto 4</h2>
-            <p>Preço: R$25,00</p>
-            <p id="estoque-produto-4">Estoque: 15</p>
-            <button id="btn-produto-4" 
-            onclick="adicionarAoCarrinho('Produto 4',50, 4)">
-            Comprar</button>
-        </div>
-      </div>
+    </div>
       
       <script src="js/script.js"></script>
 </body>
